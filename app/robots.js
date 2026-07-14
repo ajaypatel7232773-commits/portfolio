@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://pankaj.dev/sitemap.xml',
+    sitemap: 'https://ajay.dev/sitemap.xml',
   }
 }

@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://pankaj.dev';
+  const baseUrl = 'https://ajay.dev';
   
   const routes = [
     '',

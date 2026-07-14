@@ -75,7 +75,7 @@ export default function Navbar() {
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
         isScrolled
-          ? "bg-background/80 backdrop-blur-md border-b shadow-sm"
+          ? "bg-background/80 border-b shadow-sm"
           : "bg-transparent"
       )}
     >
@@ -138,7 +138,7 @@ export default function Navbar() {
                     <Linkedin className="h-5 w-5" />
                   </Button>
                 </Link>
-                <Link href="mailto:spankaj769819@gmail.com">
+                <Link href="mailto:ajaypatel7232773@gmail.com">
                   <Button variant="ghost" size="icon" className="rounded-full" aria-label="Email">
                     <Mail className="h-5 w-5" />
                   </Button>
@@ -208,17 +208,17 @@ export default function Navbar() {
           ))}
 
           <div className="mt-8 flex justify-center gap-4">
-            <Link href="https://github.com/spankaj769819" target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/ajaypatel7232773-commits" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="rounded-full" aria-label="GitHub">
                 <Github className="h-6 w-6" />
               </Button>
             </Link>
-            <Link href="https://linkedin.com/in/pankaj-shah" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.linkedin.com/in/patel-ajay-043aab273" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="rounded-full" aria-label="LinkedIn">
                 <Linkedin className="h-6 w-6" />
               </Button>
             </Link>
-            <Link href="mailto:spankaj769819@gmail.com">
+            <Link href="mailto:ajaypatel7232773@gmail.com">
               <Button variant="ghost" size="icon" className="rounded-full" aria-label="Email">
                 <Mail className="h-6 w-6" />
               </Button>

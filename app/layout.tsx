@@ -16,13 +16,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://pankaj-shah.vercel.app',
+    url: 'https://portfolio-ajay-patel-software-developer.vercel.app/',
     title: 'Ajay Patel | Software Developer',
     description: 'Portfolio of Ajay Patel, an experienced software developer specializing in React.js, Node.js, and modern web technologies.',
     siteName: 'Ajay Patel Portfolio',
     images: [
       {
-        url: 'https://pankaj-shah.vercel.app/og-image.jpg',
+        url: 'https://portfolio-ajay-patel-software-developer.vercel.app/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Ajay Patel Portfolio',
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Ajay Patel | Software Developer',
     description: 'Portfolio of Ajay Patel, an experienced software developer specializing in React.js, Node.js, and modern web technologies.',
-    creator: '@pankajshah',
-    images: ['https://pankaj-shah.vercel.app/twitter-image.jpg'],
+    creator: '@ajaypatel7232773',
+    images: ['https://portfolio-ajay-patel-software-developer.vercel.app//twitter-image.jpg'],
   },
 };
 
