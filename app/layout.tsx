@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: 'Ajay Patel | Software Developer',
     description: 'Portfolio of Ajay Patel, an experienced software developer specializing in React.js, Node.js, and modern web technologies.',
     creator: '@ajaypatel7232773',
-    images: ['https://portfolio-ajay-patel-software-developer.vercel.app//twitter-image.jpg'],
+    images: ['https://portfolio-ajay-patel-software-developer.vercel.app/twitter-image.jpg'],
   },
 };
 
