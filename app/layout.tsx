@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   keywords: 'software developer, web developer, react developer, nodejs developer, portfolio',
   authors: [{ name: 'Ajay Patel' }],
   creator: 'Ajay Patel',
+  icons: {
+    icon: '/favicon.svg',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
