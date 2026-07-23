@@ -13,7 +13,7 @@ import {
   Github,
   Linkedin,
   Mail,
-  Code,
+  User,
 } from "lucide-react";
 
 export default function Navbar() {
@@ -65,8 +65,8 @@ export default function Navbar() {
   const navLinks = [
     { title: "Home", href: "/" },
     { title: "About", href: "/#about" },
-    { title: "Projects", href: "/#projects" },
     { title: "Skills", href: "/#skills" },
+    { title: "Projects", href: "/#projects" },
     { title: "Contact", href: "/#contact" },
   ];
 
@@ -86,7 +86,7 @@ export default function Navbar() {
             className="text-2xl font-bold tracking-tight flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
             <span className="bg-primary p-1.5 rounded text-primary-foreground">
-              <Code className="h-5 w-5" />
+              <User className="h-5 w-5" />
             </span>
             <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
               Ajay Patel
