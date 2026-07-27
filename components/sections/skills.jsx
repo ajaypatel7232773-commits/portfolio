@@ -7,7 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 export default function Skills() {
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
   const staggerContainer = {
@@ -15,9 +15,9 @@ export default function Skills() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const technicalSkills = [
@@ -51,10 +51,37 @@ export default function Skills() {
     { name: "Attention to Detail", value: 95 },
   ];
 
+  const coreCompetencies = [
+    {
+      title: "Full-Stack Development",
+      desc: "End-to-end web and mobile application development with modern frameworks and architectures.",
+    },
+    {
+      title: "Performance Optimization",
+      desc: "Database optimization, caching strategies, and UI/UX performance improvements.",
+    },
+    {
+      title: "Security & Authentication",
+      desc: "JWT, OAuth, encryption, secure API design, and data privacy compliance.",
+    },
+    {
+      title: "Cloud Architecture",
+      desc: "AWS, Docker deployment, and serverless architecture design.",
+    },
+    {
+      title: "API Design & Integration",
+      desc: "RESTful API design, third-party SDK integration, real-time data synchronization.",
+    },
+    {
+      title: "Agile & Team Collaboration",
+      desc: "Cross-functional collaboration, and technical mentoring.",
+    },
+  ];
+
   return (
     <section id="skills" className="py-20 md:py-28 scroll-mt-20">
       <div className="container mx-auto px-4 md:px-6">
-        <motion.div 
+        <motion.div
           className="text-center max-w-2xl mx-auto mb-16"
           initial="hidden"
           whileInView="visible"
@@ -68,8 +95,9 @@ export default function Skills() {
             Skills & Technologies
           </h3>
           <p className="text-muted-foreground">
-            I've accumulated a diverse set of skills, tools, and technologies throughout my journey as a developer.
-            Below is a breakdown of my technical expertise and abilities.
+            I've accumulated a diverse set of skills, tools, and technologies
+            throughout my journey as a developer. Below is a breakdown of my
+            technical expertise and abilities.
           </p>
         </motion.div>
 
@@ -85,59 +113,89 @@ export default function Skills() {
               <TabsTrigger value="design">Design Skills</TabsTrigger>
               <TabsTrigger value="soft">Soft Skills</TabsTrigger>
             </TabsList>
-            
+
             <TabsContent value="technical">
-              <motion.div 
+              <motion.div
                 className="grid gap-5"
                 variants={staggerContainer}
                 initial="hidden"
                 animate="visible"
               >
                 {technicalSkills.map((skill) => (
-                  <motion.div key={skill.name} variants={fadeIn} className="space-y-2">
+                  <motion.div
+                    key={skill.name}
+                    variants={fadeIn}
+                    className="space-y-2"
+                  >
                     <div className="flex justify-between">
                       <span className="font-medium">{skill.name}</span>
-                      <span className="text-muted-foreground">{skill.value}%</span>
+                      <span className="text-muted-foreground">
+                        {skill.value}%
+                      </span>
                     </div>
-                    <Progress percent={skill.value} showInfo={false} strokeColor="linear-gradient(to right, #3b82f6, #06b6d4)" />
+                    <Progress
+                      percent={skill.value}
+                      showInfo={false}
+                      strokeColor="linear-gradient(to right, #3b82f6, #06b6d4)"
+                    />
                   </motion.div>
                 ))}
               </motion.div>
             </TabsContent>
-            
+
             <TabsContent value="design">
-              <motion.div 
+              <motion.div
                 className="grid gap-5"
                 variants={staggerContainer}
                 initial="hidden"
                 animate="visible"
               >
                 {designSkills.map((skill) => (
-                  <motion.div key={skill.name} variants={fadeIn} className="space-y-2">
+                  <motion.div
+                    key={skill.name}
+                    variants={fadeIn}
+                    className="space-y-2"
+                  >
                     <div className="flex justify-between">
                       <span className="font-medium">{skill.name}</span>
-                      <span className="text-muted-foreground">{skill.value}%</span>
+                      <span className="text-muted-foreground">
+                        {skill.value}%
+                      </span>
                     </div>
-                    <Progress percent={skill.value} showInfo={false} strokeColor="linear-gradient(to right, #8b5cf6, #3b82f6)" />
+                    <Progress
+                      percent={skill.value}
+                      showInfo={false}
+                      strokeColor="linear-gradient(to right, #8b5cf6, #3b82f6)"
+                    />
                   </motion.div>
                 ))}
               </motion.div>
             </TabsContent>
-            
+
             <TabsContent value="soft">
-              <motion.div 
+              <motion.div
                 className="grid gap-5"
                 variants={staggerContainer}
                 initial="hidden"
                 animate="visible"
               >
                 {softSkills.map((skill) => (
-                  <motion.div key={skill.name} variants={fadeIn} className="space-y-2">
+                  <motion.div
+                    key={skill.name}
+                    variants={fadeIn}
+                    className="space-y-2"
+                  >
                     <div className="flex justify-between">
                       <span className="font-medium">{skill.name}</span>
-                      <span className="text-muted-foreground">{skill.value}%</span>
+                      <span className="text-muted-foreground">
+                        {skill.value}%
+                      </span>
                     </div>
-                    <Progress percent={skill.value} showInfo={false} strokeColor="linear-gradient(to right, #f59e0b, #3b82f6)" />
+                    <Progress
+                      percent={skill.value}
+                      showInfo={false}
+                      strokeColor="linear-gradient(to right, #f59e0b, #3b82f6)"
+                    />
                   </motion.div>
                 ))}
               </motion.div>
@@ -145,7 +203,7 @@ export default function Skills() {
           </Tabs>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="mt-16 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center"
           initial="hidden"
           whileInView="visible"
@@ -153,8 +211,18 @@ export default function Skills() {
           variants={staggerContainer}
         >
           {[
-            "React", "Next.js", "JavaScript", "TypeScript", "HTML5", "CSS3",
-            "SCSS", "Node.js", "Redux", "GraphQL", "Git", "AWS"
+            "React",
+            "Next.js",
+            "JavaScript",
+            "TypeScript",
+            "HTML5",
+            "CSS3",
+            "SCSS",
+            "Node.js",
+            "Redux",
+            "GraphQL",
+            "Git",
+            "AWS",
           ].map((tech) => (
             <motion.div
               key={tech}
@@ -162,6 +230,31 @@ export default function Skills() {
               className="p-4 rounded-lg bg-card/50 border border-border hover:border-primary/30 hover:shadow-md transition-all duration-300"
             >
               {tech}
+            </motion.div>
+          ))}
+        </motion.div>
+
+        <h3 className="text-3xl md:text-4xl font-bold mb-4 mt-16 text-center">
+          Core Competencies
+        </h3>
+
+        <motion.div
+          className="mt-16 grid gap-6 sm:grid-cols-2 md:grid-cols-3"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={staggerContainer}
+        >
+          {coreCompetencies.map((c) => (
+            <motion.div
+              key={c.title}
+              variants={fadeIn}
+              className="p-4 rounded-2xl bg-gradient-to-b border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300"
+            >
+              <h4 className="text-lg font-semibold mb-2">{c.title}</h4>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {c.desc}
+              </p>
             </motion.div>
           ))}
         </motion.div>
