@@ -1,13 +1,33 @@
 "use client";
 
 import Link from "next/link";
-import { useTheme } from "next-themes";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Github, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
-  const { theme } = useTheme();
+  const [newsletterEmail, setNewsletterEmail] = useState("");
+
+  const handleSubscribe = () => {
+    const email = newsletterEmail.trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email) {
+      alert("Please enter an email address.");
+      return;
+    }
+    if (!emailRegex.test(email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    const to = "ajaypatel7232773@gmail.com";
+    const subject = encodeURIComponent("Newsletter Subscription");
+    const body = encodeURIComponent(`Please subscribe this email to the newsletter: ${email}`);
+
+    // Open user's mail client with a prefilled message
+    window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+  };
 
   const currentYear = new Date().getFullYear();
 
@@ -101,8 +121,10 @@ export default function Footer() {
                 type="email"
                 placeholder="Email address"
                 className="max-w-[220px]"
+                value={newsletterEmail}
+                onChange={(e) => setNewsletterEmail(e.target.value)}
               />
-              <Button>Subscribe</Button>
+              <Button type="button" onClick={handleSubscribe}>Subscribe</Button>
             </div>
           </div>
         </div>
