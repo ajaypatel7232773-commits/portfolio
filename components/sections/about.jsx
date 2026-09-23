@@ -127,7 +127,7 @@ export default function About() {
 
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" asChild>
-                <a href="https://drive.google.com/file/d/1abKkXBi4lBn1Nlc5KqF_StMjGkDKxLNQ/view?usp=sharing" target="_blank" download>
+                <a href="https://drive.google.com/file/d/1JxBAhgRf-1hVmeA30sgf6Yj-7ZneU394/view?usp=sharing" target="_blank" download>
                   Download Resume <ArrowDownToLine className="ml-2 h-4 w-4" />
                 </a>
               </Button>
